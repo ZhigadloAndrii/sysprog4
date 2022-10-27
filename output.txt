@@ -1,0 +1,62 @@
+< #include <stdio.h> > - < preprocessor directive >
+< //comment 2 > - < one line comment >
+< /*
+comment
+*/ > - < multiline comment >
+< пап > - < error >
+< int > - < Key word >
+< main > - < identifier >
+< ( > - < operator >
+< ) > - < operator >
+< { > - < punctuator >
+< const > - < Key word >
+< int > - < Key word >
+< dec > - < identifier >
+< = > - < operator >
+< 10 > - < decimal constant >
+< ; > - < punctuator >
+< const > - < Key word >
+< int > - < Key word >
+< oct > - < identifier >
+< = > - < operator >
+< 080 > - < decimal constant >
+< ; > - < punctuator >
+< const > - < Key word >
+< int > - < Key word >
+< hex > - < identifier >
+< = > - < operator >
+< 0xA10 > - < hex constant >
+< ; > - < punctuator >
+< const > - < Key word >
+< char > - < Key word >
+< ch > - < identifier >
+< = > - < operator >
+< 'a' > - < char constant >
+< ; > - < punctuator >
+< const > - < Key word >
+< char > - < Key word >
+< * > - < operator >
+< str > - < identifier >
+< = > - < operator >
+< "string" > - < string literal >
+< ; > - < punctuator >
+< const > - < Key word >
+< float > - < Key word >
+< fl > - < identifier >
+< = > - < operator >
+< 1.0 > - < float constant >
+< ; > - < punctuator >
+< print_hello > - < identifier >
+< ( > - < operator >
+< ) > - < operator >
+< ; > - < punctuator >
+< if > - < Key word >
+< ( > - < operator >
+< true > - < Key word >
+< ) > - < operator >
+< { > - < punctuator >
+< } > - < punctuator >
+< return > - < Key word >
+< 0 > - < decimal constant >
+< ; > - < punctuator >
+< } > - < punctuator >

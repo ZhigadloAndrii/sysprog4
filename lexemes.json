@@ -1,0 +1,18 @@
+{
+  "key_words" : ["auto", "break", "case", "char", "const", "continue", "default", "do", "double", "else", "enum","extern", "float", "for", "goto","if", "inline", "int", "long", "register","restrict", "return", "short", "signed", "sizeof", "static", "struct", "switch", "typedef", "union", "unsigned", "void", "volatile", "while", "true", "false"],
+  "lexemes"   :
+    [ {"name": "preprocessor directive", "regex": "\\#.*"},
+      {"name": "identifier", "regex": "(?<!(\\/\\*\\s*|\\/\\/|'|\"|[A-Z,a-z,_,0-9]))[A-Z,a-z,_][A-Z,a-z,_,0-9]*(?!(\\s*\\*\\/|'|\"|[A-Z,a-z,_,0-9]))"},
+      {"name": "one line comment", "regex": "\\/\\/.*"},
+      {"name": "multiline comment", "regex": "\\/\\*(.|\\n)*\\*\\/"},
+      {"name": "float constant", "regex": "\\d+\\.\\d*"},
+      {"name": "octal constant", "regex": "0[0-7]+(^[0-9])(l|L){0,1}(u|U){0,1}"},
+      {"name": "hex constant", "regex": "0x(\\d|[A-F])+(l|L){0,1}(u|U){0,1}"},
+      {"name": "decimal constant", "regex": "\\d+(l|L){0,1}(u|U){0,1}"},
+      {"name": "char constant", "regex": "'.'"},
+      {"name": "string literal", "regex": "\".+\""},
+      {"name": "operator", "regex": "[|]|\\(|\\)|\\.|->|\\+\\+|--|&|\\*|\\+|-|~|!|/|%|<<|>>|<|>|<=|>=|==|!=|\\^|\\||&&|\\|\\||\\?|:|=|\\*=|/=|%=|\\+=|-=|<<=|>>=|&=|\\^=|\\|\\|=|,|##"},
+      {"name": "punctuator", "regex": "\\{|\\}|,|:|=|;|\\.\\."},
+      {"name": "error", "regex": "[^\\s]+"}
+  ]
+}
